@@ -1,23 +1,23 @@
-let nomeHeroi = "Sr. Arroganto";
-let quantidadeXP = 10000;
+let nomeHeroi = "Dr. Arroganto";
+let quantidadeXP = 12000;
+let nivel;
 
-switch (quantidadeXP) {
-  case quantidadeXP <1000: "Ferro"
-  break;
-  case quantidadeXP >=1000 && quantidadeXP <2000: "Bronze"
-  break;
-  case quantidadeXP >=2000 && quantidadeXP <5000: "Prata"
-  break;
-  case quantidadeXP >=5000 && quantidadeXP <7000: "Ouro"
-  break;
-  case quantidadeXP >=7000 && quantidadeXP <8000: "Platina"
-  break;
-  case quantidadeXP >=8000 && quantidadeXP <9000: "Ascendente"
-  break;
-  case quantidadeXP >=9000 && quantidadeXP <10000: "Imortal"
-  break;
-  case quantidadeXP >=10000: "Radiante"
-  default: "Desconhecido"
+if (quantidadeXP < 1000) {
+  nivel = "Ferro";
+} else if (quantidadeXP >= 1000 && quantidadeXP < 2000) {
+  nivel = "Bronze";
+} else if (quantidadeXP >= 2000 && quantidadeXP < 5000) {
+  nivel = "Prata";
+} else if (quantidadeXP >= 5000 && quantidadeXP < 7000) {
+  nivel = "Ouro";
+} else if (quantidadeXP >= 7000 && quantidadeXP < 8000) {
+  nivel = "Platina";
+} else if (quantidadeXP >= 8000 && quantidadeXP < 9000) {
+  nivel = "Ascendente";
+} else if (quantidadeXP >= 9000 && quantidadeXP < 10000) {
+  nivel = "Imortal";
+} else if (quantidadeXP >= 10000) {
+  nivel = "Radiante";
 }
 
-console.log(`O herói de nome ${nomeHeroi} está no nível de ${quantidadeXP}`)
+console.log(`O herói de nome ${nomeHeroi} está no nível ${nivel}`);
